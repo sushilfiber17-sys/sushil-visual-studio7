@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCODEPDF - Ultimate Learning Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <button id="themeBtn" onclick="toggleTheme()">
+🌙 Dark Mode
+</button>
+  <h1 class="logo">SCODEPDF</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>📘 Free Education & Computer PDFs</h1>
+  <p>Learn Programming, School Subjects & Exams for Free</p>
+  <button onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">
+    Explore Courses
+  </button>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="box">📚 100+ PDFs</div>
+  <div class="box">💻 Programming Courses</div>
+  <div class="box">🎓 School Notes</div>
+  <div class="box">🔥 Free Forever</div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" id="search" onkeyup="searchPDF()" placeholder="Search courses...">
+</div>
+
+<!-- COURSES -->
+<section id="courses" class="courses">
+
+<!-- 1 -->
+<div class="card">
+<h2>Python Basics</h2>
+<p>Complete Python Guide</p>
+<a href="pdfs/python.pdf" download>Download</a>
+</div>
+
+<!-- 2 -->
+<div class="card">
+<h2>C++ Full Course</h2>
+<p>Programming Guide</p>
+<a href="pdfs/cpp.pdf" download>Download</a>
+</div>
+
+<!-- 3 -->
+<div class="card">
+<h2>Java Course</h2>
+<p>Java Programming PDF</p>
+<a href="pdfs/java.pdf" download>Download</a>
+</div>
+
+<!-- 4 -->
+<div class="card">
+<h2>JavaScript Notes</h2>
+<p>JS Full Guide</p>
+<a href="pdfs/javascript.pdf" download>Download</a>
+</div>
+
+<!-- 5 -->
+<div class="card">
+<h2>HTML Complete</h2>
+<p>Web Development Basics</p>
+<a href="pdfs/html.pdf" download>Download</a>
+</div>
+
+<!-- 6 -->
+<div class="card">
+<h2>CSS Mastery</h2>
+<p>Designing Guide</p>
+<a href="pdfs/css.pdf" download>Download</a>
+</div>
+
+<!-- 7 -->
+<div class="card">
+<h2>Math Class 10</h2>
+<p>Board Exam Notes</p>
+<a href="pdfs/math10.pdf" download>Download</a>
+</div>
+
+<!-- 8 -->
+<div class="card">
+<h2>Science Notes</h2>
+<p>Physics + Chemistry</p>
+<a href="pdfs/science.pdf" download>Download</a>
+</div>
+
+<!-- 9 -->
+<div class="card">
+<h2>English Grammar</h2>
+<p>Basic to Advanced</p>
+<a href="pdfs/english.pdf" download>Download</a>
+</div>
+
+<!-- 10 -->
+<div class="card">
+<h2>Computer Basics</h2>
+<p>Fundamentals PDF</p>
+<a href="pdfs/computer.pdf" download>Download</a>
+</div>
+
+<!-- 11 -->
+<div class="card">
+<h2>Operating System</h2>
+<p>OS Full Notes</p>
+<a href="pdfs/os.pdf" download>Download</a>
+</div>
+
+<!-- 12 -->
+<div class="card">
+<h2>DBMS Notes</h2>
+<p>Database Guide</p>
+<a href="pdfs/dbms.pdf" download>Download</a>
+</div>
+
+<!-- 13 -->
+<div class="card">
+<h2>Networking</h2>
+<p>Computer Networks PDF</p>
+<a href="pdfs/network.pdf" download>Download</a>
+</div>
+
+<!-- 14 -->
+<div class="card">
+<h2>Cyber Security</h2>
+<p>Security Basics</p>
+<a href="pdfs/security.pdf" download>Download</a>
+</div>
+
+</section>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScFQND764qGvV4tms-mjFQaKdmQ1Nl7iS6uo22m9bsxbUPhfw/viewform?usp=pp_url" target="_blank">
+Request PDF
+</a>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About SCODEPDF</h2>
+  <p>
+    SCODEPDF is a free learning platform where students can download programming,
+    school and exam preparation PDFs completely free.
+  </p>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<button onclick="toggleFAQ(this)">Is this free?</button>
+<p>Yes, 100% free for all students.</p>
+</div>
+
+<div class="faq-item">
+<button onclick="toggleFAQ(this)">How to download?</button>
+<p>Click download button and file will start downloading.</p>
+</div>
+
+<div class="faq-item">
+<button onclick="toggleFAQ(this)">Can I request PDFs?</button>
+<p>Yes, feature coming soon.</p>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 SCODEPDF | Built for Students</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
