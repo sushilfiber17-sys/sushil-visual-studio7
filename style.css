@@ -600,4 +600,23 @@ color:#38bdf8;
   background:#111;
   color:white;
 }
+.dark-mode .request-card{
+  background: linear-gradient(135deg,#0ea5e9,#1e3a8a);
+  color:white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.dark-mode .request-card p{
+  color:#e5e7eb;
+}
+
+.dark-mode .request-btn{
+  background:#fff;
+  color:#1e3a8a;
+}
+
+.dark-mode .request-btn:hover{
+  background:#000;
+  color:#fff;
+}
 
