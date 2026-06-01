@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sushilfiber17-sys.github.io/sushil-visual-studio7/sitemap.xml
