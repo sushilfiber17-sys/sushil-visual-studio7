@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCODEPDF Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#0ea5e9);
+}
+
+.container{
+width:360px;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:22px;
+text-align:center;
+box-shadow:0 0 35px rgba(0,0,0,.35);
+color:white;
+}
+
+.logo{
+font-size:34px;
+margin-bottom:10px;
+}
+
+h2{
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin:12px 0;
+border:none;
+border-radius:12px;
+outline:none;
+font-size:15px;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(45deg,#38bdf8,#2563eb);
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.04);
+}
+
+a{
+color:#67e8f9;
+text-decoration:none;
+font-weight:bold;
+}
+
+p{
+margin-top:18px;
+}
+
+/* POPUP */
+
+#popup{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.popup-box{
+
+background:white;
+color:#111;
+
+padding:30px;
+border-radius:22px;
+
+text-align:center;
+
+width:330px;
+
+box-shadow:0 0 35px rgba(0,0,0,.35);
+
+animation:pop .35s ease;
+
+}
+
+.popup-box h3{
+
+margin-bottom:10px;
+
+}
+
+.popup-box p{
+
+margin:14px 0;
+
+color:#444;
+
+}
+
+.popup-box button{
+
+margin-top:12px;
+
+background:linear-gradient(45deg,#38bdf8,#2563eb);
+
+}
+
+@keyframes pop{
+
+from{
+transform:scale(.7);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">
+
+📘 SCODEPDF
+
+</div>
+
+<h2>Welcome Back</h2>
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email">
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<button onclick="login()">
+
+Login
+
+</button>
+
+<p>
+
+No account?
+
+<a href="signup.html">
+
+Create Account
+
+</a>
+
+</p>
+
+</div>
+
+<script>
+
+function login(){
+
+localStorage.setItem(
+"loggedIn",
+"true"
+);
+
+document.body.insertAdjacentHTML(
+
+"beforeend",
+
+`<div id="popup">
+
+<div class="popup-box">
+
+<h3>
+
+✅ Login Successful!
+
+</h3>
+
+<p>
+
+Welcome Back to SCODEPDF 🚀
+
+</p>
+
+<button onclick="goHome()">
+
+Continue →
+
+</button>
+
+</div>
+
+</div>`
+
+);
+
+}
+
+function goHome(){
+
+window.location.href=
+"index.html";
+
+}
+
+</script>
+
+</body>
+</html>
